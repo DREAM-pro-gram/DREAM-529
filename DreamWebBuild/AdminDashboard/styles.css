@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  display: none;
+  padding: 20px;
+}
+
+.page.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+#login-page {
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+#login-form input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+#dashboard {
+  text-align: center;
+}
+
+#donation-reports table,
+#account-management table,
+#mentee-management table,
+#donations-overview table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#donation-reports th,
+#donation-reports td,
+#account-management th,
+#account-management td,
+#mentee-management th,
+#mentee-management td,
+#donations-overview th,
+#donations-overview td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#donation-reports th,
+#account-management th,
+#mentee-management th,
+#donations-overview th {
+  background-color: #f2f2f2;
+}

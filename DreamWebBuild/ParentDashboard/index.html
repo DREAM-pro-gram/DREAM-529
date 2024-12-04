@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent/Guardian Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="home-page" class="page active">
+        <h1>Welcome to the Parent/Guardian Dashboard</h1>
+        <button id="login-button">Login</button>
+    </div>
+
+    <div id="login-page" class="page hidden">
+        <h1>Login</h1>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required autocomplete="username">
+            <input type="password" id="password" placeholder="Password" required autocomplete="current-password">
+            <button type="submit">Login</button>
+        </form>
+        <h2>New User? Register Here</h2>
+        <form id="register-form">
+            <input type="text" id="new-username" placeholder="Username" required autocomplete="username">
+            <input type="password" id="new-password" placeholder="Password" required autocomplete="new-password">
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <div id="dashboard" class="page hidden">
+        <h1>Parent/Guardian Dashboard</h1>
+        <div id="child-info">
+            <!-- Child/Mentee information will be displayed here -->
+        </div>
+        <button id="add-donation-btn">Add Donation</button>
+        <button id="create-qr-btn">Create QR Code</button>
+        <button id="logout-btn">Logout</button>
+    </div>
+
+    <div id="donation-page" class="page hidden">
+        <h1>Donation Page</h1>
+        <form id="donation-form">
+            <input type="text" id="child-name" placeholder="Child/Mentee Name" readonly>
+            <input type="number" id="donation-amount" placeholder="Donation Amount" required>
+            <select id="payment-method" required>
+                <option value="" disabled selected>Select Payment Method</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+            <button type="submit">Submit Donation</button>
+        </form>
+    </div>
+
+    <div id="thank-you-page" class="page hidden">
+        <h1>Thank You!</h1>
+        <p>Your donation has been successfully submitted.</p>
+        <button id="back-to-dashboard-btn">Back to Dashboard</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

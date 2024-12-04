@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+  background-color: #f0f8ff; /* Light aqua background for a pleasant look */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Page Visibility */
+.hidden {
+  display: none;
+}
+
+.page {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.page.active {
+  display: block;
+}
+
+/* Home Page */
+#home-page h1 {
+  color: #333;
+}
+
+#home-page button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#home-page button:hover {
+  background-color: #0056b3;
+}
+
+/* Login/Registration Page */
+#login-page h1,
+#login-page h2 {
+  color: #333;
+}
+
+#login-page form {
+  margin-bottom: 20px;
+}
+
+#login-page input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#login-page button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#login-page button:hover {
+  background-color: #218838;
+}
+
+/* Dashboard */
+#dashboard h1 {
+  color: #333;
+}
+
+#dashboard button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #17a2b8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#dashboard button:hover {
+  background-color: #138496;
+}
+
+/* Donation Form Page */
+#donation-page h1 {
+  color: #333;
+}
+
+#donation-form input,
+#donation-form select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#donation-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffc107;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#donation-form button:hover {
+  background-color: #e0a800;
+}
+
+/* Thank You Page */
+#thank-you-page h1 {
+  color: #333;
+}
+
+#thank-you-page p {
+  font-size: 18px;
+  color: #555;
+}
+
+#thank-you-page button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#thank-you-page button:hover {
+  background-color: #0056b3;
+}
